@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Web project</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/my.css">
+</head>
+<body>
+    <style type="text/css">
+        .jumbotron {
+            background-image: url("./images/forest.jpg");
+            background-size: cover;
+            text-shadow: gray 0.2em 0.2em 0.2em;
+            color: white;
+        }
+    </style>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">My Page</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">소개<span class="sr-only"></span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">나의포트폴리오<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Moing</a></li>
+                            <li><a href="#">DLMS</a></li>
+                            <li><a href="#">동영상업로드</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="내용을 입력하세요." >
+                    </div>
+                    <button type="submit" class="btn btn-default">검색</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">접속하기<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">나의 웹페이지를 소개합니다.</h1>
+            <p class="text-center">부트스트렙을 활용한 나의 페이지를 소개합니다.</p>
+            <p class="text-center"><a class="btn btn-success btn-lg" href="#" role="button">START</a></p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4> DLMS </h4>
+                <p>학과의 사물함을 관리해주는 시스템입니다.</p>
+                <p><a href="#" class="btn btn-default" data-target="#modal" data-toggle="modal">자세히 알아보기</a></p>
+            </div>
+            <div class="col-md-4">
+                <h4> Moing </h4>
+                <p>나의 스터디를 온라인으로 관리할 수 있도록 해주는 사이트 입니다.</p>
+                <p><a href="#" class="btn btn-default">자세히 알아보기</a></p>
+            </div>
+            <div class="col-md-4">
+                <h4> 동영상 업로드 </h4>
+                <p>ffmpeg을 이용한 동영상업로드와 썸네일을 딸 수 있도록 만든 사이트 입니다.</p>
+                <p><a href="#" class="btn btn-default">자세히 알아보기</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-pencil"></span>
+                    &nbsp;&nbsp; 내가 사용한 기술</h3>
+            </div>
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img class="media-object" src="./images/노드.png" alt="nodeJS이미지" width="100px" height="60px"></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">NodeJS를 이용하여 사이트 구축<a href="#"></a></h4>
+                        노드를 처음 써봤을때 신세계였다! 너무 재미있었다.
+                    </div>
+                </div>
+                <hr>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img class="media-object" src="./images/리엑트.png" alt="리엑트이미지" width="100px" height="60px"></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">리엑트를 이용하여 사이트 구축<a href="#"></a></h4>
+                        리엑트 처음 써봤을때 신세계였다! 너무 재미있었다.
+                    </div>
+                </div>
+                <hr>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img class="media-object" src="./images/몽고디비.png" alt="몽고디비이미지" width="100px" height="60px"></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">몽고디비를 이용하여 사이트 구축<a href="#"></a></h4>
+                        몽고디비를 처음 써봤을때 신세계였다! 너무 재미있었다.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #8ca06b; color: #ffffff;">
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-sm-2" style="text-align: center;">
+                    <h5>Copyright &copy; 2020</h5><h5>이혜민(Lee Hye Min)</h5>
+                </div>
+                <div class="col-sm-4">
+                    <h4>제작자 소개</h4><p>저는 대림대학교에 재학중인 이혜민이라고 합니다.</p>
+                </div>
+                <div class="col-sm-2">
+                    <h4 style="text-align: center;">네비게이션</h4>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">소개</a>
+                        <a href="#" class="list-group-item">나의 포트폴리오</a>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <h4 style="text-align: center;">SNS</h4>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">유튜브</a>
+                        <a href="#" class="list-group-item">블로그</a>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <h4 style="text-align: center;"><span class="glyphicon glyphicon-ok"></span>&nbsp;이혜민</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="row">
+        <div class="modal" id="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        DLMS란
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                        DLMS서비스란 학과의 사물함을 예약하고 관리하는 시스템입니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>
